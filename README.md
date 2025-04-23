@@ -5,11 +5,17 @@ Major: Website Development and Design
 
 Tools and resources
 Adobe. (n.d.). Adobe Illustrator. https://www.adobe.com/products/illustrator.html
+
 Mozilla Contributors. (n.d.). CSS: Cascading Style Sheets. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/CSS
+
 Mozilla Contributors. (n.d.). JavaScript guide. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
 WebAIM. (n.d.). WAVE: Web accessibility evaluation tool. https://wave.webaim.org/
+
 World Wide Web Consortium (W3C). (n.d.). Standards. https://www.w3.org/standards/
+
 Unsplash. (n.d.). Free high-resolution photos. https://unsplash.com
+
 Shangri-La Group. (n.d.). Shangri-La resorts. https://www.shangri-la.com/resorts/index.aspx
 
 
