@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shangri-La Beach Resort - Booking</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/general.css"/>   
+</head>
+<body>
+  <header>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="services.html">Services</a>
+          <ul class="dropdown">
+            <li><a href="services.html">Our Spa Services</a></li>
+            <li><a href="dining.html">Our Dining</a></li>
+            <li><a href="rooms.html">Our Accommodations</a></li>
+            <li><a href="activities.html">Our Excursions</a></li>
+          </ul>
+        </li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="logo-container">
+    <img src="images/logo.svg" alt="Shangri-La Beach Resort Logo" class="pages-logo" width="300" height="98">
+    <h1>Shangri-La Beach Resort - Booking</h1>
+  </div>
+
+  <p class="pages-intro">Discover the wonders of our tropical paradise and create unforgettable memories with our curated selection of activities and excursions.</p>
+
+  <section class="booking-form">
+    <h2>Book Your Experience</h2>
+    <form action="thankyou.html" method="GET">
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="firstName" required>
+        </div>
+        <div class="form-group half">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group half">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+
+      <label for="service">Select a Service:</label>
+      <select id="service" name="service" required onchange="showSubOptions(); toggleConditionalFields();">
+        <option value="">--Select--</option>
+        <option value="rooms">Rooms</option>
+        <option value="spa">Spa</option>
+        <option value="dining">Dining</option>
+        <option value="activities">Activities</option>
+      </select>
+
+      <div id="sub-options">
+        <label for="sub-service">Choose an Option:</label>
+        <select id="sub-service" name="subService" required></select>
+      </div>
+
+      <div class="rooms-only">
+        <div class="form-row check-fields" >
+          <div class="form-group half">
+            <label for="checkin">Reservation Time:</label>
+            <input type="time" id="checkin" name="checkin">
+          </div>
+          <div class="form-group half">
+            <label for="pets">Bringing Pets?</label>
+            <select id="pets" name="pets" required>
+              <option value="">--Select--</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option></select>
+          </div>
+        </div>
+
+      
+
+      <div class="form-row">
+        <div class="form-group half">
+          <label for="adults">Number of Adults:</label>
+          <input type="number" id="adults" name="adults" min="1" max="10" required>
+        </div>
+        <div class="form-group half">
+          <label for="children">Number of Children:</label>
+          <input type="number" id="children" name="children" min="0" max="20"required>
+        </div>
+      </div>
+
+      <label for="text-area">Additional Notes:</label>
+      <textarea id="text-area" name="notes" rows="4" placeholder="Tell us more about your preferences..."></textarea>
+
+      <button type="submit" class="btn-form">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo.svg" alt="Shangri-La Beach Resort Logo" width="300" height="98">
+        </a>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://instagram.com">Instagram</a>
+    </div>
+      <div class="copyrights">
+        <p>&copy; 2025 Shangri-La Beach Resort. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
